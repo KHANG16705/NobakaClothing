@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animation.css">
+    <link rel="stylesheet" href="./asset/css/shopcart.css" />
+</head>
+<body>
+    <!-- Header -->
+    <div class="main-header">
+        <div class="header-content">
+            <div class="header-nav">
+                <button class="header-nav-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+            <div class="header-logo">
+                <a href="index.html" class="logo-text">NOBAKHA</a>
+            </div>
+            <div class="header-icon">
+                <button class="icon-link js-open-acc"><i class="fa-regular fa-user"></i></button>
+                <button class="icon-link js-open-chatbox"><i class="fa-regular fa-comment-dots"></i></button>
+                <button class="icon-link js-open-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="icon-link js-open-cart"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+        </div>
+    </div>
+    <!-- End-Header -->
+
+    <!-- search -->
+    <div class="search-ov">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-2 col-lg-2 d-none d-lg-block">
+                    <div class="logo-wrap">
+                        <h1 class="search-logo">NOBAKHA</h1>
+                    </div>
+                </div>
+                <div class="col-xl-8 col-lg-8 offset-md-1 offset-1 offset-lg-0  col-9 ">
+                    <div class="search-box-custom">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        <input type="text" placeholder="Tìm kiếm">
+                    </div>
+                    <div class="search-group">
+                        <h4 class="search-label">Tìm kiếm nổi tiếng</h4>
+                        <div class="search-tags">
+                            <a href="#">Knu skool</a>
+                            <a href="#">ultrarange</a>
+                            <a href="#">slip on</a>
+                        </div>
+                    </div>
+                    <div class="search-group">
+                        <h4 class="search-label">Đề xuất cho bạn</h4>
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-3 col-md-4 col-6">
+                                <div class="product-item">
+                                    <img src="assets/img/Se1.jpg" alt="Shoe">
+                                    <p class="name">Knu Skool Shoe</p>
+                                    <p class="price">2.100.000 ₫</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-4 col-6">
+                                <div class="product-item">
+                                    <img src="assets/img/Se2.jpg" alt="Shoe">
+                                    <p class="name">Old Skool Shoe</p>
+                                    <p class="price">1.800.000 ₫</p>
+                                </div>
+                            </div>
+                            
+                            <div class="col-xl-3 col-lg-3 col-md-4 col-6">
+                                <div class="product-item">
+                                    <img src="assets/img/Se3.jpg" alt="Shoe">
+                                    <p class="name">Slip On</p>
+                                    <p class="price">1.500.000 ₫</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-4 col-6">
+                                <div class="product-item">
+                                    <img src="assets/img/Se4.jpg" alt="Shoe">
+                                    <p class="name">Authentic</p>
+                                    <p class="price">1.600.000 ₫</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-xl-2 col-lg-2 col-2">
+                    <div class="cancel-wrap">
+                        <button class="btn-cancel js-close-search">Cancel</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End-search -->
+
+    <!-- chatbox -->
+    <div class="overlay-chat"></div>
+
+    <div class="chatbox-container ">
+        <div class="chatbox-header">
+            <div class="header-left">
+                <i class="fa-solid fa-star"></i>
+                <span class="brand-name">NOBAKHA</span>
+            </div>
+            <div class="header-right">
+                <button class="icon-btn"><i class="fa-solid fa-ellipsis"></i></button>
+                <button class="icon-btn"><i class="fa-solid fa-expand"></i></button>
+                <button class="icon-btn js-close-chat"><i class="fa-solid fa-chevron-down"></i></button>
+            </div>
+        </div>
+
+        <div class="chatbox-body">
+            </div>
+
+        <div class="chatbox-footer">
+            <div class="input-group-rounded">
+                <input type="text" placeholder="Nhập nội dung cần hỗ trợ">
+                <button class="send-btn">
+                    <i class="fa-regular fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- End-chatbox -->
+
+    <!-- shoppintCart -->
+
+    <!-- shoppintCart -->
+    <div class="cart-main">
+        <div class="container">
+            <div class="cart-header">
+                <p class="desc">Giỏ hàng của tôi</p>
+                <button class="btn-close-cart">
+                    <svg
+                class="icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="33"
+                height="33"
+                viewBox="0 0 33 33"
+                fill="none"
+                >
+                <path
+                    d="M18.587 16.1125L32.2246 2.47487L29.7497 0L16.1121 13.6375L2.47456 0L-0.000289917 2.47487L13.6373 16.1125L-0.000289917 29.7499L2.47456 32.2249L16.1121 18.5874L29.7497 32.2249L32.2246 29.7499L18.587 16.1125Z"
+                    fill="#1A1A1A"
+                />
+                </svg>
+                </button>
+            </div>
+            <div class="cart">
+                <div id="cart-items-container"></div>
+                <!-- RIGHT -->
+                <div class="summary">
+                <div class="promo">
+                    <span>Áp dụng mã khuyến mãi</span>
+                    <span>⌄</span>
+                </div>
+                <div class="summary-row muted">
+                    <span>Tổng phụ</span>
+                    <span>1.580.000 đ</span>
+                </div>
+                <div class="summary-row muted">
+                    <span>Chi phí vận chuyển</span>
+                    <span>0 đ</span>
+                </div>
+                <div class="summary-total">
+                    <span></span>
+                    <span>1.580.000 đ</span>
+                </div>
+                <a href="bill.html" class="btn">Thanh toán</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Slide-banner -->
+    <div class="slide-banner">
+        <div class="image-track">
+            <img class="slide-img" src="assets/img/Banner1.jpg" alt="Banner1">
+            <img class="slide-img" src="assets/img/Banner2.webp" alt="Banner2">
+            <img class="slide-img" src="assets/img/Banner3.jpg" alt="Banner3">
+        </div>
+    </div>
+    <!-- End-Slide-banner -->
+
+    <!-- Gift-item -->
+    <div class="gift-section">
+        <div class="container-fluid"> 
+            <div class="row"> 
+                <div class="col-xl-3 col-lg-3 col-md-3 col-6">
+                    <div class="gift-border">
+                        <div class="gift-item">
+                            <img src="assets/img/Gift-item-1.jpg" alt="Gift1">
+                        </div>
+                        <h2 class="gift-desc">
+                            Quà tặng dưới 2.500.000₫
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-6">
+                    <div class="gift-border">
+                        <div class="gift-item">
+                            <img src="assets/img/Gift-item-2.jpg" alt="Gift2">
+                        </div>
+                        <h2 class="gift-desc">
+                            Quà tặng dưới 1.200.000₫
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-6">
+                    <div class="gift-border">
+                        <div class="gift-item">
+                            <img src="assets/img/Gift-item-3.jpg" alt="Gift3">
+                        </div>
+                        <h2 class="gift-desc">
+                            Quà tặng dưới 600.000₫
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-6">
+                    <div class="gift-border">
+                        <div class="gift-item">
+                            <img src="assets/img/Gift-item-4.jpg" alt="Gift4">
+                        </div>
+                        <h2 class="gift-desc">
+                            Quà tặng dưới 3.500.000₫
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End-Gift-item -->
+
+    <!-- christmast-section -->
+        <div class="christmast-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <h2 class="text-title">Nhanh tay lên!</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-12">
+                        <h1 class="text-center">Đảm bảo giày đến tay trước Giáng Sinh</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-12">
+                        <button class="buy-now">
+                            Mua ngay
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- End-christmast-section -->
+
+    <!-- Top-Picks  -->
+    <div class="top-picks">
+        <div class="container-fluid">
+            <h1 class="topic-title">
+                Giảm 40% khi thêm vào giỏ hàng
+            </h1>
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-6">
+                    <div class="products-topic">
+                        <div class="product-img">
+                            <a href="clicksanpham.html"><img src="assets/img/topic1.png" alt="product1"></a>
+                            <span class="add-product">+</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">
+                                Giày Classic Slip-On Checkerboard 
+                            </h3>
+                            <div class="product-price">
+                                <p class="old-price">1.800.000 <span>đ</span></p>
+                                <p class="new-price">720.000 <span>đ</span> </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-6">
+                    <div class="products-topic">
+                        <div class="product-img">
+                            <a href="clicksanpham.html"><img src="assets/img/topic2.png" alt="product1"></a>
+                            <span class="add-product">+</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">
+                                Giày UltraRange 2.0 
+                            </h3>
+                            <div class="product-price">
+                                <p class="old-price">1.800.000 <span>đ</span></p>
+                                <p class="new-price">720.000 <span>đ</span> </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-6">
+                    <div class="products-topic">
+                        <div class="product-img">
+                            <a href="clicksanpham.html"><img src="assets/img/topic3.png" alt="product1"></a>
+                            <span class="add-product">+</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">
+                                Giày Authentic 
+                            </h3>
+                            <div class="product-price">
+                                <p class="old-price">1.800.000 <span>đ</span></p>
+                                <p class="new-price">720.000 <span>đ</span> </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End-Top-Picks  -->
+    
+    <!-- sweater-shirt -->
+    <div class="sweater-shirt">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-12">
+                    <h1 class="title">
+                        Mua áo nỉ chỉ từ 950.000 <span>đ</span>
+                    </h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-6">
+                    <div class="sweater-container">
+                        <div class="sweater-img">
+                            <a href="#"><img src="assets/img/Sw1.png" alt="Sweater1"></a>
+                            <span class="add-product">+</span>
+                        </div>
+                        <div class="sweater-content">
+                            <h3 class="title">
+                                Áo Vans 66 Pullover 
+                            </h3>
+                            <p class="price">
+                                950.000 <span>đ</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-6">
+                    <div class="sweater-container">
+                        <div class="sweater-img">
+                            <a href="#"><img src="assets/img/Sw2.png" alt="Sweater2"></a>
+                            <span class="add-product">+</span>
+                        </div>
+                        <div class="sweater-content">
+                            <h3 class="title">
+                                Quần Vans 66  
+                            </h3>
+                            <p class="price">
+                                950.000 <span>đ</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-6">
+                    <div class="sweater-container">
+                        <div class="sweater-img">
+                            <a href="#"><img src="assets/img/Sw3.png" alt="Sweater3"></a>
+                            <span class="add-product">+</span>
+                        </div>
+                        <div class="sweater-content">
+                            <h3 class="title">
+                                Áo Vans 66  
+                            </h3>
+                            <p class="price">
+                                950.000 <span>đ</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End-sweater-shirt -->
+
+    <!-- life-style -->
+    <div class="life-style">
+        <div class="life-style-content"></div>
+    </div>
+    <!-- End-life-style -->
+
+    <!-- Footer -->
+     <div class="footer">
+        <div class="footer-container">
+            <div class="container-sm">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-4">
+                        <div class="introduce">
+                            <h1 class="title">Giới thiệu </h1>
+                            <p class="desc">NOBAKHA mong muốn đem đến những trải nghiệm và dịch vụ tốt nhất cho khách hàng về các sản phẩm CHÍNH HÃNG</p>
+                            <div class="logo">
+                                <img src="assets/img/logo-footer.png" alt="LogoFooter">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4">
+                        <div class="connect">
+                            <h1 class="title">Liên Kết</h1>
+                            <ul class="connect-list">
+                                <li><a href="account.html#introduce">Giới thiệu</a></li>
+                                <li><a href="account.html#policy">Chính sach bảo mật</a></li>
+                                <li><a href="account.html#change">Chính sách đổi trả</a></li>
+                                <li><a href="account.html#delivery">Chính sách vận chuyển và giao hàng</a></li>
+                                <li><a href="account.html#payment">Chính sách thanh toán</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4">
+                        <div class="information">
+                            <h1 class="title">Thông tin liên hệ</h1>
+                            <div class="in4-content">
+                                <p class="address"> <span>Địa chỉ:</span> Tầng  4 - Số nhà 3, ngách 69, ngõ 117 Thái Hà, Đống Đa, Hà Nội</p>
+                                <p class="phone-number"><span>Điện thoại:</span> 0909956706</p>
+                                <p class="mail"><span>Mail:</span> Nobakhastore@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-footer">
+            <div class="contain-fluid">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <p class="footer-copyright">Copyright © 2025 NOBAKHA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+    <!-- End-Footer -->
+
+    <!-- Overlay -->
+    <div class="overlay1">
+
+    </div>
+     <!-- End-Overlay -->
+     
+    <!-- menu-navigation -->
+    <div class="menu-nav">
+        <ul class="menu-list">
+            <li><button class="tab-btn active" data-target="black-friday">BLACK FRIDAY</button></li>
+            <li><button class="tab-btn " data-target="featured">ĐẶC SẮC</button></li>
+            <li><button class="tab-btn" data-target="woman">NỮ</button></li>
+            <li><button class="tab-btn" data-target="men">NAM</button></li>
+            <li><button class="tab-btn" data-target="kid">TRẺ EM</button></li>
+        </ul>
+        <div class="menu-content">
+            <div id="black-friday" class="tab-content show ">
+                <ul class="sub-menu-list">
+                    <li><a href="shoes.html">Giày Giảm Giá</a></li>
+                    <li><a href="clothingsale.html">Áo Giảm Giá</a></li>
+                    <li><a href="pksale.html">Phụ Kiện Giảm Giá</a></li>
+                </ul>
+            </div>
+
+            <div id="featured" class="tab-content ">
+                <ul class="sub-menu-list">
+                    <li><a href="holyday.html">Quà tặng ngày lễ</a></li>
+                    <li><a href="newproduce.html">Hàng mới</a></li>
+                    <li><a href="bestseller.html">Bet sellers</a></li>
+                    <li><a href="comingsoon.html">Sắp ra</a></li>
+                </ul>
+            </div>
+
+            <div id="woman" class="tab-content ">
+                <ul class="sub-menu-list">
+                    <li><a href="#">Hàng mới</a></li>
+                    <li><a href="#">Bet sellers</a></li>
+                    <li><a href="#">Giày nữ</a></li>
+                    <li><a href="#">Quần áo nữ</a></li>
+                    <li><a href="#">Phụ kiện</a></li>
+                    <li><a href="#">Tất cả</a></li>
+                </ul>
+            </div>
+
+            <div id="men" class="tab-content">
+                <ul class="sub-menu-list">
+                    <li><a href="#">Hàng mới</a></li>
+                    <li><a href="#">Bet sellers</a></li>
+                    <li><a href="shoe.html">Giày nam</a></li>
+                    <li><a href="clothes.html">Quần áo nam</a></li>
+                    <li><a href="assessori.html">Phụ kiện</a></li>
+                    <li><a href="alltiem.html">Tất cả</a></li>
+                </ul>
+            </div>
+            <div id="kid" class="tab-content">
+                <ul class="sub-menu-list">
+                    <li><a href="newproduce.html">Hàng mới</a></li>
+                    <li><a href="bestseller.html">Bet sellers</a></li>
+                    <li><a href="shoe.html">Giày trẻ em</a></li>
+                    <li><a href="clothes.html">Quần áo trẻ</a></li>
+                    <li><a href="assessori.html">Phụ kiện</a></li>
+                    <li><a href="alltiem.html">Tất cả</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu-footer">
+            <ul class="sub-menu-list">
+                <li><a href="custombyshop.html">Custom by Shop</a></li>
+                <li><a href="limited.html">Limited</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- End-menu-navigation -->
+
+    <!-- Overlay2 -->
+     <div class="overlay2">
+        
+     </div>
+    <!-- End-Overlay2 -->
+
+    <!-- Account-navigation -->
+    <div class="acc-nav">
+        <div class="acc-header">
+            <button class="close-acc">
+                <i class="fa-solid fa-x"></i>
+            </button>
+        </div>
+        <div class="acc-content">
+            <h1 class="title-acc">  
+                Tài khoản
+            </h1>
+            <div class="acc-menu">
+                <ul class="acc-item">
+                    <li>
+                        <a href="account.html#my-acc" class="my-account" data-target="my-acc">
+                            <i class="fa-regular fa-user"></i>
+                            <span>Hồ sơ</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="account.html#my-cart" class="my-cart" data-target="my-cart">
+                            <i class="fa-solid fa-box-archive"></i>
+                            <span>Đơn mua</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="account.html#my-favor" data-target="my-favor" class="my-favor">
+                            <i class="fa-regular fa-heart"></i>
+                            <span>Danh sách yêu thích</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="account.html#my-sup" class="my-sup"  data-target="my-sup">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <span>Hỗ trợ</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="acc-footer">
+            <button class="acc-logout">
+                Đăng xuất
+            </button>
+        </div>
+    </div>
+    <!-- End-Account-navigation -->
+
+
+    <!-- Boosttrap-script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+    <!--End-Boosttrap-script -->
+    <script src="./asset/js/shop_cart.js"></script>
+    <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./asset/css/base.css" />
+    <link rel="stylesheet" href="./asset/css/login.css" />
+    <link rel="stylesheet" href="./asset/css/responsive.css" />
+  </head>
+  <body>
+    <h1 class="logonakaka">NOBAKA</h1>
+    <div class="container_login">
+      <div class="tabs">
+        <div id="tabLogin" class="tab active">Đăng Nhập</div>
+        <div id="tabRegister" class="tab">Tạo tài khoản</div>
+      </div>
+
+      <!-- FORM ĐĂNG NHẬP -->
+      <form id="formLogin" class="form active">
+        <input type="email" id="loginEmail" placeholder="Email*" required />
+        <input
+          type="password"
+          id="loginPassword"
+          placeholder="Mật khẩu*"
+          required
+        />
+        <a href="index.html" class="btn">Đăng nhập</a>
+        <a class="forgot">Quên mật khẩu?</a>
+      </form>
+
+      <!-- FORM ĐĂNG KÝ -->
+      <form id="formRegister" class="form">
+        <input type="text" id="firstName" placeholder="Tên*" required />
+        <input type="text" id="lastName" placeholder="Họ*" required />
+        <input type="email" id="registerEmail" placeholder="Email*" required />
+        <input
+          type="password"
+          id="registerPassword"
+          placeholder="Mật khẩu*"
+          required
+        />
+        <button class="btn">Tạo tài khoản</button>
+
+        <p class="note">
+          Bằng cách gửi thông tin của tôi và tạo tài khoản, tôi xác nhận rằng
+          tôi đã đọc và chấp nhận Điều Khoản Sử Dụng...
+        </p>
+      </form>
+    </div>
+    <script src="./asset/js/login.js"></script>
+  </body>
+</html>
