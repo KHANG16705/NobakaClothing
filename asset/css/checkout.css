@@ -1,0 +1,317 @@
+.container_info {
+  max-width: calc(100% - 140px);
+  margin: 0 auto;
+}
+.infomation {
+  display: flex;
+  column-gap: 100px;
+  margin-top: 61px;
+  margin-bottom: 250px;
+}
+.infomation-left {
+  width: 50%;
+}
+
+.infomation-left .left-input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+}
+.infomation-left .title {
+  margin-bottom: 30px;
+  color: #000;
+  font-size: 3.6rem;
+  font-weight: 500;
+  letter-spacing: -1.08px;
+}
+
+.infomation-right {
+  width: 50%;
+}
+/* content-box */
+.content-box {
+  display: flex;
+  column-gap: 21px;
+  margin-bottom: 15px;
+}
+.content-box .content-box_img {
+  width: 147px;
+  height: 184px;
+}
+.content-box_img .box_img {
+  width: 100%;
+  object-fit: cover;
+}
+.infomation-right .title {
+  margin-top: 108px;
+  margin-left: 40px;
+  margin-bottom: 31px;
+  color: #202020;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.content-box_info .box_title {
+  margin-top: 8px;
+  color: #202020;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.content-box_info .desc {
+  color: #202020;
+  font-size: 1.6rem;
+}
+.content-box_info .desc-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*  */
+.infomation-right .title-bunus {
+  color: #202020;
+  font-size: 1.4rem;
+  margin-bottom: 6px;
+}
+.content-bunus {
+  display: flex;
+  column-gap: 14px;
+  margin-bottom: 38px;
+}
+.content-bunus .bunus-input {
+  width: 363px;
+  height: 42px;
+  font-size: 1.4rem;
+}
+.content-bunus .btn-bunus {
+  padding: 5px 35px 5px;
+  background-color: #000;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.box-desc .desc {
+  display: flex;
+  color: #202020;
+  font-size: 2rem;
+}
+.box-desc .desc span {
+  margin-left: 340px;
+}
+.box-desc .totaldesc span {
+  margin-left: 0;
+  padding-left: 334px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #aaa;
+}
+.infomation-right .total-primary {
+  color: #000;
+  font-size: 3.2rem;
+  font-weight: 500;
+  letter-spacing: -0.96px;
+  margin-left: 375px;
+}
+.order_btn .back {
+  display: flex;
+}
+.order_btn .back .icon {
+  margin-top: 10px;
+}
+.order_btn .back .desc {
+  color: #202020;
+  font-size: 1.8rem;
+}
+.order_btn {
+  display: flex;
+  align-items: center;
+  column-gap: 180px;
+  margin-top: 30px;
+}
+.order_btn .order-summit {
+  background-color: #000;
+  color: #fff;
+  font-size: 3.2rem;
+  font-weight: 500;
+  width: 188px;
+  padding: 8px 20px 8px;
+}
+/* ==============ship================= */
+.ship {
+  margin-top: 16px;
+}
+.payment-item,
+.ship .ship-item {
+  display: flex;
+  align-items: center;
+  border: 1px solid #000;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 68px;
+  column-gap: 20px;
+}
+.ship .desc {
+  display: flex;
+  color: #202020;
+  font-size: 2rem;
+  column-gap: 350px;
+}
+/* ==============payment=============== */
+.payment {
+  margin-top: 41px;
+}
+.payment-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 17px;
+}
+.payment-item {
+  height: 91px;
+}
+.payment-item .desc {
+  width: 450px;
+  color: #202020;
+  font-size: 2rem;
+}
+/* ==============overlay thanh toán=============== */
+.body {
+  position: relative;
+}
+.overlay,
+.overlay_content {
+  display: none;
+}
+.overlay {
+  position: absolute;
+  inset: 0 0 0 0;
+  background-color: #000;
+  opacity: 0.3;
+}
+.overlay_content {
+  padding: 20px;
+  top: 176px;
+  left: 207px;
+  position: absolute;
+  width: 1048px;
+  height: 550px;
+  background-color: #fff;
+}
+.overlay_content .desc {
+  color: #000;
+  font-size: 3.6rem;
+  font-weight: 500;
+  letter-spacing: -1.08px;
+}
+/* ==============bill.html=============== */
+.bill {
+  display: flex;
+  column-gap: 30px;
+  margin-top: 70px;
+  margin-bottom: 56px;
+}
+.bill-content {
+  width: 60%;
+}
+
+.bill-content .bill-content_top {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  margin-bottom: 18px;
+}
+.bill-content_top .content .header {
+  color: #000;
+  font-size: 4rem;
+  font-weight: 500;
+  letter-spacing: -1.2px;
+}
+.bill-content_top .content .desc {
+  color: #202020;
+  font-size: 2rem;
+  width: 90%;
+}
+.bill-content_top .logo_box {
+  width: 122px;
+}
+.bill-content .bill_info {
+  display: flex;
+  border: 1px solid #aaa;
+  height: 420px;
+  width: 85%;
+  column-gap: 69px;
+  padding: 30px;
+  margin-left: 31px;
+}
+.bill_info .title {
+  color: #000;
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: -0.96px;
+}
+.bill_info .item {
+  padding-left: 8px;
+  padding-right: 8px;
+  width: 300px;
+}
+.bill_info .item .title-nth {
+  margin-top: 26px;
+}
+.bill_info .desc {
+  color: #000;
+  font-size: 2rem;
+  letter-spacing: -0.72px;
+}
+
+/* =====bill-product */
+.bill-product {
+  width: 40%;
+}
+.bill-product .title {
+  margin-top: 36px;
+  color: #202020;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+.bill-product .content-box {
+  padding-top: 29px;
+  padding-bottom: 17px;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+}
+.bill-box.box-desc .desc span {
+  margin-left: 64%;
+}
+.bill-box.box-desc .totaldesc span {
+  margin-left: 0;
+  padding-left: 63%;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #aaa;
+}
+.bill-product .total-primary {
+  display: flex;
+  align-items: center;
+  color: #202020;
+  font-size: 3.2rem;
+}
+.bill-product .total-primary span {
+  color: #000;
+  font-size: 3.2rem;
+  font-weight: 500;
+  letter-spacing: -0.96px;
+  margin-left: 43%;
+}
+.btn-bill {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 310px;
+  background: #000;
+  color: #fff;
+  font-size: 3.2rem;
+  font-weight: 500;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.btn-bill:hover{
+  background-color: #f0efef;
+  color:#000
+}

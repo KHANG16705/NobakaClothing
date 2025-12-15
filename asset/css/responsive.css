@@ -1,0 +1,222 @@
+@media (min-width: 768px) and (max-width: 991px) {
+  .shoes-title {
+    font-size: 2.8rem;
+  }
+  .shoes-card__badge {
+    width: 37%;
+    top: -17px;
+    left: -21px;
+  }
+  /* =====================custombyshop====================================== */
+  .hero-section__img {
+    width: 100%;
+    object-fit: cover;
+    height: 588px;
+  }
+  .hero-section {
+    height: 588px;
+  }
+  .hero-content {
+    top: 340px;
+  }
+  .hero-content__title {
+    max-width: 600px;
+  }
+  .hero-content__description {
+    max-width: 820px;
+  }
+
+  .hero-holiday {
+    height: 434px;
+  }
+  .hero-holiday__img {
+    height: 434px;
+  }
+  /* =====================holyday====================================== */
+  .promo__content {
+    max-width: 651px;
+  }
+  .promo__main-title {
+    width: 582px;
+  }
+  .promo__button {
+    margin-top: 20px;
+  }
+
+  /* =============== donmua =========== */
+  .order-nav .order-nav_a {
+    font-size: 2.2rem;
+  }
+  .order-content {
+    padding: 20px;
+  }
+  .order-content .content-left {
+    width: 26%;
+  }
+
+  /* ===============checkout =============== */
+  .infomation {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+  .infomation-left {
+    width: 100%;
+  }
+  .infomation-right {
+    width: 100%;
+  }
+  .infomation-left .title {
+    margin-bottom: 70px;
+  }
+  .content-bunus .bunus-input {
+    width: 608px;
+  }
+  .box-desc .desc {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+  }
+  .infomation-right .total-primary {
+    margin-left: 608px;
+  }
+  .infomation-right .title {
+    margin-top: 0px;
+  }
+  .order_btn {
+    justify-content: space-between;
+    margin-right: 5px;
+    margin-bottom: 30px;
+  }
+  .overlay_content {
+    left: 92px;
+    width: 721px;
+    height: 400px;
+  }
+  .overlay_content .img {
+    width: 220px;
+    height: 240px;
+  }
+}
+
+/* ============ mobile ============ */
+@media (max-width: 767px) {
+  .custom-title {
+    display: none;
+  }
+  .hero-section__img {
+    width: 100%;
+    object-fit: cover;
+    height: 588px;
+  }
+  .hero-section {
+    height: 588px;
+  }
+
+  .hero-content {
+    top: 223px;
+  }
+  /* shoes-card  */
+  .shoes-card {
+    padding-left: 15px;
+    padding-right: 3px;
+  }
+  .shoes-list {
+    margin-top: 15px;
+  }
+  .shoes-title {
+    font-size: 3.2rem;
+  }
+  .shoes-card__badge {
+    top: -15px;
+    left: -19px;
+    width: 37%;
+  }
+  .favories {
+    width: calc(100% - 20px);
+  }
+  .favories .shoes-title {
+    font-size: 3.2rem;
+  }
+
+  .logonakaka {
+    margin-left: 35px;
+  }
+
+  /* ===============checkout =============== */
+  .infomation {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+  .infomation-left {
+    width: 100%;
+  }
+  .infomation-right {
+    width: 100%;
+  }
+  .container_info {
+    max-width: calc(100% - 30px);
+    margin: 0 auto;
+  }
+  .infomation-right .title {
+    margin-top: -20px;
+    margin-left: 4px;
+  }
+  .content-bunus .btn-bunus {
+    padding: 0;
+    font-size: 1.6rem;
+    width: 85px;
+    height: 42px;
+  }
+  .content-bunus {
+    column-gap: 10px;
+  }
+  .box-desc .desc {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+  }
+  .box-desc .desc span {
+    margin-left: 0px;
+  }
+  .box-desc .totaldesc span {
+    margin-left: 0;
+    padding-left: 0px;
+    border-bottom: none;
+  }
+  .infomation-right .total-primary {
+    margin-left: 240px;
+  }
+  .order_btn {
+    column-gap: 73px;
+    margin-bottom: 80px;
+  }
+  .order_btn .back .desc {
+    width: 134px;
+  }
+  .order_btn .order-summit {
+    width: 170px;
+    padding: 4px 20px 4px;
+  }
+  .ship .desc {
+    column-gap: 105px;
+  }
+  .payment-item {
+    height: 125px;
+  }
+  .payment-item .desc {
+    font-size: 1.6rem;
+  }
+  .overlay_content .img {
+    width: 220px;
+    height: 240px;
+  }
+  .overlay_content {
+    width: 400px;
+    height: 350px;
+    top: 131px;
+    left: 15px;
+  }
+  .overlay_content .desc {
+    font-size: 2.6rem;
+  }
+}

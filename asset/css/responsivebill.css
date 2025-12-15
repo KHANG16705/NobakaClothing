@@ -1,0 +1,80 @@
+@media (min-width: 768px) and (max-width: 991px) {
+  .bill {
+    flex-wrap: wrap;
+  }
+  .bill-content {
+    width: 100%;
+  }
+  .bill-product {
+    width: 100%;
+  }
+  .bill_info .item {
+    max-width: 300px;
+  }
+  .bill-content .bill_info {
+    height: 420px;
+    width: 95%;
+    padding: 15px;
+  }
+
+  .favories .shoes-title {
+    font-size: 3.2rem;
+  }
+}
+
+/* mobile */
+@media (max-width: 767px) {
+  .bill {
+    flex-wrap: wrap;
+  }
+
+  .bill-content {
+    width: 100%;
+  }
+  .bill-product {
+    width: 100%;
+  }
+  .container_info {
+    max-width: calc(100% - 10px);
+  }
+  .bill-content .bill-content_top {
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    align-items: center;
+  }
+  .bill-content_top .content .header {
+    font-size: 3rem;
+  }
+  .bill-content_top .content .desc {
+    font-size: 1.8rem;
+    width: 64%;
+    margin-left: 80px;
+  }
+  .bill-content_top .content {
+    text-align: center;
+  }
+
+  .bill-content .bill_info {
+    border: none;
+    width: 93%;
+    padding: 0px;
+    margin-left: 14px;
+    height: 600px;
+  }
+  .box-desc .desc {
+    justify-content: space-between;
+  }
+  .bill-box.box-desc .desc span {
+    margin-left: 0;
+  }
+  .bill-box.box-desc .totaldesc span {
+    padding-left: 0;
+    border-bottom: none;
+  }
+  .bill-product .total-primary span {
+    margin-left: 31%;
+  }
+  .btn-bill {
+    width: 380px;
+  }
+}

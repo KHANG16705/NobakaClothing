@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Squada+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Squada+One&display=swap");
+:root {
+  --font: "Afacad", sans-serif;
+  --font-logo: "Squada One", sans-serif;
+  --color-text: #000;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  color: var(--color-text);
+  line-height: 1.6;
+  font-family: var(--font);
+}
+a {
+  text-decoration: none;
+}
+.price span {
+  text-decoration: underline;
+}
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+button {
+  border: none;
+  padding: 0;
+}
+input {
+  padding: 0;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
