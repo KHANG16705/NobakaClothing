@@ -1,0 +1,60 @@
+.support-content{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    display: none;
+    padding: 0px 4px ; 
+    animation: slideAhalfInLeft 0.3s ease-in-out forwards;;
+}
+.support-content.show{
+    display: block;
+}
+.support-content .main-support{
+    display: none;
+}
+
+.support-content .main-support.show{
+    display: block;
+}
+.support-content .container{
+    max-width: 900px;
+    margin: 0 auto;
+    display: block;
+}
+
+.support-content .title{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.support-content .support-view li{
+    margin-bottom: 10px;
+}
+.list-support{
+    font-size: 20px;
+}
+.support-content .support-view button{
+    color: var(--color-text);
+    text-decoration: underline;
+    transition: all 0.1s ease;
+    font-style: italic;
+    background: none;
+}
+.support-content .support-view button:hover{
+    color: blue;
+}
+.support-content .support-qa .section{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.support-content .support-qa p{
+    font-size: 20px;
+}
+.support-content .wrap-question{
+    margin-bottom: 16px;
+}
+.support-content .question-content{
+    font-size: 22px;
+    font-weight: bold;
+}

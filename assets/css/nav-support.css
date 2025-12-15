@@ -1,0 +1,135 @@
+/* Giới thiệu */
+.support-content{
+    margin-top: 30px;
+}
+.support-content .introduce{
+    margin-bottom: 40px;
+    display: none;
+}
+.introduce.show{
+    display: block;
+}
+.introduce .container-fluid{
+    padding : 0px 100px;
+}
+.introduce .intro-head{
+    position: relative;
+    margin-bottom: 45px;
+}
+.introduce .intro-head h1{
+    font-weight: bold;
+    text-align: center;
+    font-size: 50px;
+}
+.introduce .intro-head i{
+    position: absolute;
+    top: 0;
+    right: 60px;
+    font-size: 18px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 15px;
+}
+.introduce .intro-head i:hover{
+    background-color: #f0eeee;
+}
+
+.introduce .intro-wrap{
+    padding: 20px 50px;
+}
+.introduce .intro-content{
+    margin-bottom: 50px;
+}
+.introduce .intro-content .intro-title{
+    font-size: 32px;
+    font-weight: bold;
+}
+.introduce .intro-content .intro-desc{
+    font-size: 20px;
+}
+.introduce .intro-content .image-intro{
+    width: 100%;
+    padding: 20px 50px;
+}
+
+@media (max-width:991px){
+    .introduce .intro-head i{
+    top: 10px;
+    right: -20px;
+}
+}
+
+/* End-Giới thiệu */
+
+/* another */
+.inner-head{
+    position: relative;
+    margin-bottom: 30px;
+}
+.inner-head i{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 15px;
+    padding: 10px 15px;
+}
+.inner-head i:hover{
+    background-color: #f0eeee;
+}
+.inner-head h1{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.inner-content .inner-wrap{
+    margin-bottom: 20px;
+}
+.inner-content .inner-title{
+    font-size: 20px;
+    font-weight: bold;
+}
+.inner-content .inner-desc{
+    font-size: 18px;
+}
+.inner-list{
+    font-size: 20px;
+    list-style-type: disc; 
+    padding-left: 20px
+}
+.inner-list li{
+    list-style-type: disc; 
+    padding-left: 20px
+}
+.policy{
+    display: none;
+    animation: slideAhalfInLeft 0.3s ease-in-out forwards;
+}
+.policy.show{
+    display: block;
+}
+.change{
+    display: none;
+    animation: slideAhalfInLeft 0.3s ease-in-out forwards;
+}
+.change.show{
+    display: block;
+}
+.delivery{
+    display: none;
+    animation: slideAhalfInLeft 0.3s ease-in-out forwards;
+}
+.delivery.show{
+    display: block;
+}
+.payment{
+    display: none;
+    animation: slideAhalfInLeft 0.3s ease-in-out forwards;
+}
+.payment.show{
+    display: block;
+}
+/* End-another */

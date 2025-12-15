@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Squada+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Squada+One&display=swap');
+:root{
+    --font: "Afacad", sans-serif;
+    --font-logo : "Squada One", sans-serif; 
+    --color-text : #000 ; 
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body{
+    color : var(--color-text) ; 
+    line-height: 1.6 ;
+    font-family: var(--font);
+    overflow-x: hidden;
+    padding-top: 7rem;
+}
+a{
+    text-decoration: none;
+    
+}
+button{
+    border: none;
+}
+.price span{
+    text-decoration: underline;
+}
+li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+p{
+    margin-bottom: 0px;
+}
+.btn1{
+    padding: 5px 40px ;
+    background: none;
+    border: 3px solid #000;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    font-size: 18px;
+    margin-top: 15px;
+}
+.btn1:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.btn2{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px 50px;
+    background-color: #000;
+    color: #fff;
+    transition: all 0.2s ease;
+}
+.btn2:hover{
+    background-color: #ccc;
+    color: #000;
+}

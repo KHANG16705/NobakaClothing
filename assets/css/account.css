@@ -1,0 +1,556 @@
+/* main-account */
+.main-acc{
+    padding-bottom: 30px;
+}
+
+.main-acc .account-view{
+    text-align: center;
+}
+
+/* account-selectbox */
+.acc-mobile-nav {
+    position: relative;
+    margin-bottom: 20px;
+    z-index: 10;
+}
+
+.mobile-nav-toggle {
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 25px 30px !important;
+    font-size: 24px !important;
+}
+
+.mobile-nav-list {
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-top: none;
+    transform: translateY(-20%);
+    opacity: 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.mobile-nav-item {
+    padding: 20px 25px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.mobile-nav-item:hover {
+    background-color: #f9f9f9;
+}
+
+.mobile-nav-list.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0%);
+}
+/* end-acc-select-box */
+
+.main-acc .account-detail ul{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.main-acc .account-detail{
+    padding-bottom: 7px;
+    border-bottom: 1px solid #ccc;
+}
+.main-acc .account-header .acc-title{
+    font-weight: bold;
+    font-size: 40px;
+    margin: 40px 0px;
+}
+.account-select-nav {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    outline: none;
+    background-color: #f9f9f9;
+}
+.main-acc .account-detail button{
+    color: var(--color-text);
+    padding: 5px 30px;
+    font-size: 16px;
+    background: none;
+}
+.main-acc .account-detail button.active{
+    text-decoration: underline;
+    font-weight: bold;
+}
+.account-content{
+    padding: 30px;
+    display: none;
+    animation: slideAhalfInLeft 0.3s ease-in-out forwards;
+}
+
+
+.account-content.show{
+    display: block;
+}
+.main-acc .profile-content{
+    padding-top: 50px;
+    margin-left: 80px;
+}
+.main-acc .header{
+    margin-bottom: 35px;
+}
+.main-acc .header .desc{
+    font-size: 18px;
+}
+.main-acc .title-account h3{
+    font-weight: bold;
+    font-size: 28px;
+    /* margin-bottom: 45px; */
+}
+.main-acc  input{
+    width: 100%;
+    padding: 8px 0px;
+}
+.main-acc  .acc-label{
+    padding-bottom: 10px;
+    font-size: 18px;
+    padding-left: 10px;
+} 
+.main-acc .acc-label p{
+    font-weight: 400;
+}
+
+.main-acc .password-content{
+    padding-top: 50px;
+    margin-left: 80px;
+    margin-bottom: 50px;
+}
+.main-acc .password-input a{
+    color: var(--color-text);
+    font-style: italic;
+    font-size: 18px;
+}
+.main-acc .forget-pass {
+    width: 100%;
+    text-align: right;   
+    margin-top: 5px;      
+}
+.main-acc .address-content{
+    margin-left: 80px;
+    margin-bottom: 50px;
+}
+.main-acc .address-content .header{
+    margin-bottom: 0px;
+}
+
+.address-item {
+    border: 1px solid #000; 
+    padding: 20px;
+    margin-top: 20px;
+    position: relative;
+    background-color: #fff;
+}
+.address-info p {
+    
+    font-size: 18px;
+    color: #333;
+}
+.address-info {
+    /* display: flex; */
+}
+.address-info strong {
+    font-weight: 600;
+}
+.address-item .btn1 {
+    position: absolute;
+    bottom: 20px; 
+    right: 20px; 
+}
+.default-address label {
+    display: flex;       
+    align-items: center; 
+    column-gap: 8px;  
+    cursor: pointer;  
+    font-size: 18px; 
+}
+/* End-main-account */
+
+/* add-adress */
+.overlay-address {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); 
+  z-index: 1000;
+  display: flex;
+  justify-content: center; 
+  align-items: center;  
+  display: none;
+}
+.overlay-address.active{
+    display: block;
+}
+.popup-address {
+    position: fixed;  
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10001;
+    background: white;
+    padding: 0px 20px;
+    width: 800px; 
+    border-radius: 4px; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); 
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s ease-in-out; 
+}
+.popup-address i{
+    cursor: pointer;
+    padding: 5px 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.popup-address i:hover{
+    background-color: #e7e4e4;
+}
+.popup-address.active{
+    visibility: visible;
+    opacity: 1;
+}
+.popup-address form {
+  display: flex;
+  flex-direction: column; 
+  gap: 15px; 
+}
+.popup-address .modal-header{
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    justify-content: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 25px;
+}
+.popup-address .modal-header h3{
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--color-text);
+
+}
+.popup-address .modal-header i{
+    position: absolute;
+    top: 23px;
+    right: 0;
+    font-size: 14px;
+}
+.popup-address form{
+    margin-bottom: 20px;
+}
+.popup-address form input{
+    padding: 15px 16px ;
+    font-size: 18px;
+    position: relative;
+}
+.footer-address{
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.footer-address .cancel-address button{
+    margin-top: 0px;
+}
+.footer-address .set-address button{
+    padding: 8px 40px ;
+}
+/* End-add-adress */
+
+/* set-pw */
+.overlay-password {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); 
+  z-index: 1000;
+  display: flex;
+  justify-content: center; 
+  align-items: center;  
+  display: none; 
+}
+.overlay-password.active{
+    display: block;
+}
+.popup-pw {
+    position: fixed;  
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10001;
+    background: white;
+    padding: 0px 20px;
+    width: 800px; 
+    max-width: 100%;
+    border-radius: 4px; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); 
+    display: none; 
+}
+@media (max-width: 991px){
+    .popup-pw{
+        width: 500px;
+    }
+}
+.popup-pw i{
+    cursor: pointer;
+    padding: 5px 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.popup-pw i:hover{
+    background-color: #e7e4e4;
+}
+.popup-pw.active{
+    display: block;
+}
+.popup-pw .modal-header{
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    justify-content: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 25px;
+}
+.popup-pw .modal-header h3{
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--color-text);
+
+}
+.popup-pw .modal-header i{
+    position: absolute;
+    top: 23px;
+    right: 0;
+    font-size: 14px;
+}
+.popup-pw form{
+    margin-bottom: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.popup-pw form input{
+    padding: 15px 16px ;
+    font-size: 18px;
+    position: relative;
+    width: 80%;
+}
+.overlay-password .modal-content{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.overlay-password button {
+    margin-left: 15px;
+    padding: 15px 40px;
+    font-size: 18px;
+    border: 1px solid #000;
+    background: none;
+}
+.overlay-password button:hover{
+    background-color: #000;
+    color: #fff;
+}
+/* End-set-pw */
+
+/* set-otp */
+.overlay-otp {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); 
+  z-index: 1000;
+  display: flex;
+  justify-content: center; 
+  align-items: center;  
+  display: none; 
+}
+.overlay-otp.active{
+    display: block;
+}
+.popup-otp {
+  background: white;
+  padding: 0px 20px;
+  width: 800px; 
+  border-radius: 4px; 
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3); 
+  display: none; 
+}
+.popup-otp.active{
+    display: block;
+}
+.popup-otp .modal-header{
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    justify-content: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 25px;
+}
+.popup-otp .modal-header h3{
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--color-text);
+
+}
+.popup-otp .modal-header i{
+    position: absolute;
+    top: 23px;
+    right: 0;
+    font-size: 14px;
+}
+.popup-otp form{
+    margin-bottom: 20px;
+}
+.popup-otp form input{
+    padding: 15px 16px ;
+    font-size: 18px;
+    position: relative;
+    width: 80%;
+}
+.overlay-otp .modal-content{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.overlay-otp button {
+    margin-left: 15px;
+    padding: 15px 40px;
+    font-size: 18px;
+    border: 1px solid #000;
+    background: none;
+    margin-bottom: 40px;
+}
+.overlay-otp button:hover{
+    background-color: #000;
+    color: #fff;
+}
+/* End-set-otp */
+
+/* reset-pass */
+.reset-password{
+    margin-bottom: 190px;
+}
+.reset-password .reset-header{
+    min-height: 60px;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    position: relative;
+    top: 0;
+    right: 0;
+    border-bottom: 1px solid #ccc;
+}
+.reset-password .reset-header i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    color: #000;
+    padding: 10px 20px;
+}
+.reset-password .reset-header i:hover{
+    background-color: #eeebeb;
+}
+.reset-password label{
+    display: block;
+}
+.reset-logo{
+    margin-bottom: 80px;
+    margin-top: 50px;
+}
+.reset-logo h3{
+    font-size: 40px;
+    font-family: var(--font-logo);
+}
+.reset-password .reset-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 0 20px;
+}
+.reset-logo {
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+.reset-logo h3 {
+    font-size: 40px;
+    font-weight: bold;
+}
+.form-wrapper {
+    width: 100%;
+    max-width: 500px;
+}
+.form-title {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+.form-title h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+.input-group label {
+    margin-bottom: 8px;
+    color: #666; 
+    font-size: 16px;
+}
+.input-group input {
+    width: 100%; 
+    padding: 12px;
+    border: 1px solid #2d2c2c;
+    font-size: 16px;
+}
+.input-group input:focus {
+    outline: none;
+    border-color: #000;
+}
+.btn-group {
+    display: flex;
+    gap: 20px; 
+    margin-top: 30px;
+}
+.btn-group button {
+    height: 48px;
+    padding: 0;
+    margin: 0;
+    flex: 1; 
+    padding: 12px;
+    font-size: 16px;
+}
+/* End-reset-pass */
